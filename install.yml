@@ -1,0 +1,64 @@
+# tap
+cmd: brew tap
+  - caskroom/cask
+  - caskroom/versions
+  - caskroom/fonts
+
+# brew
+cmd: brew install
+  - gcc
+  - go
+  - rbenv
+  - ruby-build
+  - pyenv
+  - rust
+
+# brew cask
+cmd: brew cask install
+  # Apps
+  - alfred
+  - flux
+  - skype
+  - evernote
+  - spotify
+  - firefox-ja
+  - google-chrome-canary
+  - kindle
+  - teamviewer
+  - appcleaner
+  # Dev Apps
+  - android-studio
+  - genymotion
+  - sequel-pro
+  - sqlworkbenchj
+  - rowanj-gitx
+  - iterm2
+  - googleappengine
+  - java
+  # Editor
+  - atom
+  - sublime-text
+  - font-source-code-pro
+  - google-japanese-ime
+
+# atom package
+cmd: apm install
+  - file-icons
+  - go-plus
+  - language-jade
+  - activate-power-mode
+
+# gem
+cmd: gem install
+  - tmuxinator
+  - cocoapods
+  - sass
+  - capistrano
+
+# oh-my-zsh
+cmd: sh
+  - -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# nvm
+cmd: curl
+  - -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash

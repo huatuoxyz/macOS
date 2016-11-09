@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function parse() {
+parse() {
   local s='[[:space:]]*' w='[a-zA-Z0-9_]*' fs=$(echo @|tr @ '\034')
   sed -ne "s|^\($s\)\($w\)$s:$s\"\(.*\)\"$s\$|\1$fs\2$fs\3|p" \
       -e "s|^\($s\)\($w\)$s[:-]$s\(.*\)$s\$|\1$fs\2$fs\3|p" "$1" |
@@ -9,16 +9,30 @@ function parse() {
       if ($2 == "cmd") {
         command=$3;
       } else {
-        printf("%s %s\n", command, $3)
+        printf("%s %s;", command, $3)
       }
     }
   }'
 }
 
+exec() {
+  echo -e "\033[1;32m$1\033[0;39m"
+  eval $1
+}
+
 list=$(parse install.yml)
 
-IFS=""
-for cmd in $list; do
-  echo $cmd
-  eval $cmd
+option=$1
+
+IFS=";"
+
+for cmd in $list;
+do
+  name=$(echo $cmd | cut -d' ' -f1)
+  if [ "$option" = $name ]; then
+    exec $cmd
+  fi
+  if [ "$option" = "" ]; then
+    exec $cmd
+  fi
 done

@@ -20,10 +20,18 @@ cmd: brew cask install
 cmd: apm install
   - file-icons
   - go-plus
+
+cmd: gem install
+  - tmuxinator
+  - cocoapods
 ```
 
 ### Install Softwares
 
 ```
 $ ./install.sh
+
+$ ./install.sh brew
+
+$ ./install.sh gem
 ```

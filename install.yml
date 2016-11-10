@@ -6,12 +6,11 @@ cmd: brew tap
 
 # brew
 cmd: brew install
-  - gcc
   - go
+  - rust
   - rbenv
   - ruby-build
   - pyenv
-  - rust
   - mas
 
 # brew cask
@@ -28,6 +27,7 @@ cmd: brew cask install
   - teamviewer
   - appcleaner
   # Dev Apps
+  - docker
   - android-studio
   - genymotion
   - sequel-pro

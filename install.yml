@@ -12,6 +12,7 @@ cmd: brew install
   - ruby-build
   - pyenv
   - rust
+  - mas
 
 # brew cask
 cmd: brew cask install
@@ -40,6 +41,13 @@ cmd: brew cask install
   - sublime-text
   - font-source-code-pro
   - google-japanese-ime
+
+# AppStore
+cmd: mas install
+  - 539883307 # LINE
+  - 869223134 # KakaoTalk
+  - 836500024 # WeChat
+  - 409789998 # Twitter
 
 # atom package
 cmd: apm install

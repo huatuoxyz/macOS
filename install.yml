@@ -12,6 +12,7 @@ cmd: brew install
   - ruby-build
   - pyenv
   - mas
+  - tmux
 
 # brew cask
 cmd: brew cask install
@@ -70,6 +71,10 @@ cmd: gem install
   - cocoapods
   - sass
   - capistrano
+
+# go
+cmd: go get -u
+  - github.com/kardianos/govendor
 
 # oh-my-zsh
 cmd: sh

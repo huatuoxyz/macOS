@@ -18,14 +18,15 @@ cmd: brew cask install
   # Apps
   - alfred
   - flux
+  - slack
   - skype
   - evernote
   - spotify
-  - firefox-ja
   - google-chrome-canary
   - kindle
   - teamviewer
   - appcleaner
+  - transmission
   # Dev Apps
   - docker
   - android-studio
@@ -35,7 +36,10 @@ cmd: brew cask install
   - rowanj-gitx
   - iterm2
   - googleappengine
-  - java
+  - hyper
+  - firefox
+  - robomongo
+  - mamp
   # Editor
   - atom
   - sublime-text
@@ -44,10 +48,14 @@ cmd: brew cask install
 
 # AppStore
 cmd: mas install
-  - 539883307 # LINE
-  - 869223134 # KakaoTalk
-  - 836500024 # WeChat
-  - 409789998 # Twitter
+  - 539883307  # LINE
+  - 869223134  # KakaoTalk
+  - 836500024  # WeChat
+  - 409789998  # Twitter
+  - 403388562  # Transmit
+  - 425424353  # The Unarchiver
+  - 1128253391 # Team for Workplace
+  - 1031280567 # Postico
 
 # atom package
 cmd: apm install

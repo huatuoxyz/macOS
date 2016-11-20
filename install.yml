@@ -13,6 +13,13 @@ cmd: brew install
   - pyenv
   - mas
   - tmux
+  # aws
+  - awscli
+  - s3cmd
+  # dev
+  - mysql
+  - postgresql
+  - mongodb
 
 # brew cask
 cmd: brew cask install
